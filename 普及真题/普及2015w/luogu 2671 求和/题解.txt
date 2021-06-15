@@ -1,0 +1,10 @@
+选出x,y,z如果要想为等差数列的话，xz需要为同号，即xz同为奇数，或者xz同为偶数。
+故可以把同一种颜色的分成两组，一组为奇数位置，一组为偶数位置。
+对于每一列中的数，答案为(x+z)*(number_x+number_z)=x*number_x+x*number_z+z*number_x+z*number_z
+可以枚举z，那么所有的x为:
+P为该分组的个数。
+第一部分：((x1*number_x1)+(x2*number_x2)+...+(xp*number_xp))
+第二部分：(编号1...编号p）*（number_z)
+第三部分：(number_1...number_p)*(z)
+第四部分：p*(z*number_z)
+都可以用前缀和统计来优化。
