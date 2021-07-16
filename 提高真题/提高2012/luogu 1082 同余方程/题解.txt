@@ -1,0 +1,7 @@
+扩展欧几里德算法。
+然后把x调成最小正数。
+
+aX+bY=bx+(a-bk)y
+aX+bY=ay+b*(x-ky)
+X=y
+Y=x-ky
