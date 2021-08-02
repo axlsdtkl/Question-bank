@@ -1,0 +1,4 @@
+reference:https://www.luogu.com.cn/blog/yousiki/solution-p5689
+
+关于O(n)求各阶乘的逆元：
+Reference:https://www.luogu.com.cn/blog/zjp-shadow/cheng-fa-ni-yuan

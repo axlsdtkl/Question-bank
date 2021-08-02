@@ -1,0 +1,2 @@
+找规律。
+Reference:https://www.luogu.com.cn/blog/froggy/solution-p5023

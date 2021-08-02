@@ -1,0 +1,2 @@
+答案为2^x-n。
+注意可能会超过unsigned long long，可以判断一下特殊情况。

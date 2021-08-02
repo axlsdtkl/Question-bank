@@ -1,0 +1,4 @@
+https://www.cnblogs.com/GoldenPotato/p/9599666.html
+
+状态dp
+f[I][j]表示当前到第i层，总共取了的点的集合为j的最小花费数。

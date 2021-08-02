@@ -1,0 +1,4 @@
+luogu 7076	[CSP-S2020] 动物园	普及+/提高
+Luogu 7075	[CSP-S2020] 儒略日	普及+/提高
+Luogu 7077	[CSP-S2020] 函数调用	提高+/省选-
+Luogu 7078	[CSP-S2020] 贪吃蛇	NOI/NOI+/CTSC	
