@@ -1,5 +1,9 @@
-一个结论就是最后一部分数量越小一定越好。
-f[i]记录当前以i为结尾的最小答案，l[i]表示对应的以i结尾的最小段。
-故答案就是求si-sj>=lj的尽量大的j。
-si>=sj+lj，设rj=sj+lj，相当于要求si>=rj（j尽量大），由于si是单调递增的，故可以用单调队列维护rj。
-复杂度o(n)。
+参考：https://www.luogu.com.cn/blog/syksykCCC/solution-p5665	（思路）
+参考：https://www.luogu.com.cn/blog/iamzxy/solution-p5665   （代码）
+
+问题其实就是希望最后一段尽可能小。
+I的转移其实就是sum[I]-sum[j]>=sum[j]-sum[k]，而k是pre[j]，即j为尾巴时选的前序k的位置，在所有满足里面选j尽可能大的。
+sum[I]-sum[j]>=sum[j]-sum[k] 移项：
+sum[I]>=2*sum[j]-sum[k] 即可以维护v[j]=2*sum[j]-sum[k]
+由于sum[i]是递增的，故可以用个递增的单调队列来维护v[j]，随着sum[i]的增加，队列头部不断弹出（满足条件的标准提高），然后每次答案就是头部，每次新的元素加入时，先看看尾巴上现有的值是不是更大，大的话就不断弹出，因为没有存在的必要，新的值sum又小，位置又尽可能靠后。
+复杂度O(n)。
