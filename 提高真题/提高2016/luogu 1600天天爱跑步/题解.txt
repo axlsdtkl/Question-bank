@@ -4,7 +4,7 @@
 如果P是从lca到ti的路上。
 则dist[si,ti]-w[p]=deep[ti]-deep[P]，移项满足
 dist[si,ti]-deep[ti]=w[p]-deep[p]。
-故可以dfs每一个子树父结点，把所有的所有可能的起点或者终点在的统计起来，对于那些子树中不经过父结点的，在这些路径起点终点的lca点打标记就行，搜索到时减去即可。
+故可以dfs每一个子树父结点，把所有可能的起点或者终点统计起来，对于那些子树中不经过父结点的，在这些路径起点终点的lca点打标记就行，搜索到时减去即可。
 对于那些lca点刚好是可见点时，由于会多算一次，提前减一次即可。
 
 reference：https://www.luogu.com.cn/problem/solution/P1600
